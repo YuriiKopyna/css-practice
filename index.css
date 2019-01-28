@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root 
+{
+    font-family: 'Work Sans', sans-serif;
+    --main-color: black;
+}
+body 
+{
+    max-width: 980px;
+    margin: auto;
+}
+.logo
+{
+   font-family: 'Poppins', monospace;
+   font-size: 3rem;
+   text-align: center;
+   margin: 24px 0;
+}
+header .menu
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+header .menu li {
+    list-style-type: none;
+}
+header .menu li a 
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    --main-color: black;
+}
+header .menu li a:hover {
+    text-decoration: underline;
+}
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+    }
+    header .logo {
+        margin: 24px 10px;
+    }
+    header nav .menu {
+        align-items: center;
+        flex: 1;
+    }
+}
+header .banner 
+{
+    background-image: url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+header .banner h1 
+{
+    color: var(--accent-color);
+    font-size: 3rem;
+}
+header .banner .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.btn-default {
+    color: blue;
+}
+.product-card {
+    border: 1px solid black;
+    padding: 5px;
+}
+.product-card img {
+    display: block;
+    width: 100%;
+}
+.product-card .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+@media (min-width: 450px) {
+    
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (min-width: 660px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 880px) {
+    .product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
